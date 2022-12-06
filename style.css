@@ -20,13 +20,15 @@ form {
 }
 
 form label,
-form input {
+form input,
+form select {
   width: 100%;
   display: block;
   margin-bottom: 10px;
+  
 }
 
-form input {
+form input, form select {
   height: 40px;
   padding-left: 10px;
   border: 1px solid #333;

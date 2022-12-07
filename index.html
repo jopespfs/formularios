@@ -10,16 +10,23 @@
 
   <body>
     <form action="">
-      <label for="nome">Nome</label>
-      <input type="name" id="nome" placeholder="Digite seu nome" />
+      <label for="nome">Nome <span>*</span></label>
+      <input type="name" id="nome" maxlength="40" placeholder="Digite seu nome" />
+      
+      <label for="telefone">Telefone <span>*</span></label>
+      <input type="tel" id="telefone" size="12" maxlength="10" placeholder="(XX) 00000-0000" />
 
-      <label for="email">Email</label>
+      <label for="Nascimento">Data de Nascimento <span>*</span></label>
+      <input type="text" name="dia" size="2" maxlength="2" placeholder="dd"> 
+      <input type="text" name="mes" size="2" maxlength="2" placeholder="mm"> 
+      <input type="text" name="ano" size="4" maxlength="4" placeholder="aaaa">
+
+      <label for="email">Email <span>*</span></label>
       <input type="email" id="email" placeholder="Digite seu email" />
 
-      <label for="telefone">Telefone</label>
-      <input type="tel" id="telefone" placeholder="(XX) 00000-0000" />
+      <br>
 
-      <a href="Forms1.html" class="button">Continuar</a>
+      <a href="Forms1.html" class="button skip">Continuar</a>
     </form>
   </body>
 </html>

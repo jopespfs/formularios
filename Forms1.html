@@ -4,14 +4,14 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Formulário 1</title>
+    <title>Formulário</title>
 
     <link rel="stylesheet" href="style.css" />
   </head>
 
   <body>
     <form action="">
-      <label for="estado">Estado</label>
+      <label for="estado">Estado <span>*</span></label>
       <select name="" id="estado">
         <option value="Selecione">Selecione</option>
         <option value="AC">Acre</option>
@@ -43,24 +43,30 @@
         <option value="TO">Tocantins</option>
       </select>
 
-      <label for="cidade">Cidade</label>
+      <label for="cidade">Cidade <span>*</span></label>
       <input type="cidade" id="cidade" placeholder="Ex: Fortaleza" />
 
-      <label for="enderço">Endereço</label>
+      <label for="enderço">Endereço <span>*</span></label>
       <input type="endereço" id="endereço" placeholder="Av; Rua; travessa" />
 
-      <label for="número" class="short">Nº</label>
-      <input type="numero" id="numero" />
+      <div class="grid">
 
-      <label for="complemento">Complemento</label>
-      <input type="complement" id="complemento" placeholder="apto; casa" />
+        <label for="número" class="short">Número <span>*</span></label>
+        <input type="numero" id="numero" />
+  
+        <label for="complemento">Complemento</label>
+        <input type="complement" id="complemento" placeholder="apto; casa" />
 
-      <label for="cep">Cep</label>
-      <input type="zipcode" name="" id="CEP" placeholder="Ex: 60.000-000" />
+      </div>
+
+      <label for="cep">Cep <span>*</span></label>
+      <input type="zipcode" name="cep" size="5" maxlength="5" placeholder="Ex: 60000" /> - <input type="text" name="cep2" size="3" maxlength="3" placeholder="000">
+
+      <br>
 
       <a href="index.html" class="button">Voltar</a>
       
-      <a href="forms2.html" class="button">Continuar</a>
+      <a href="forms2.html" class="button skip">Continuar</a>
     </form>
     
   </body>

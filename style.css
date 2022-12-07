@@ -4,10 +4,6 @@
   box-sizing: border-box;
 }
 
-a {
-  text-decoration: none;
-}
-
 :root {
   /* fonts */
   --title-font-size: 1.875rem;
@@ -22,6 +18,10 @@ body {
   background-color: #333;
 }
 
+a {
+  text-decoration: none;
+}
+
 form {
   width: 18.75rem;
   background-color: white;
@@ -33,13 +33,15 @@ form {
   border-radius: 0.625rem;
 }
 
-form label,
+form label{
+  display: block;
+  margin: 0.625rem;
+  
+}
+
 form input,
 form select {
-  width: 100%;
-  display: block;
-  margin-bottom: 0.625rem;
-  
+
 }
 
 form input, form select {
@@ -51,15 +53,24 @@ form input, form select {
 .button {
   background-color: blueviolet;
   color: white;
+  margin-top: 0.625rem;
   height: 2.5rem;
   display: inline-flex;
   align-items: center;
-  padding: 0 2rem;
+  padding: 0 1.5rem;
   border-radius: 0.25rem;
   font: 500 1rem var(--body-font);
-  transition: background 0.3s;
+  transition: background 0.5s;
 }
 
 .button:hover {
   background: coral;
+}
+
+.skip {
+  margin-right: 0;
+}
+
+span {
+  color: red;
 }
